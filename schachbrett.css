@@ -1,0 +1,48 @@
+:root{
+	--clr-white: #F5DEB3;
+	--clr-black: #8B4513;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.flexbrett{
+	display: flex;
+}
+
+.gridbrett_black{
+	display: grid;
+	grid-template-areas: 
+	"eins zwei";
+}
+
+.gridbrett_black2{
+	display: grid;
+	grid-template-areas: 
+	"zwei eins";
+}
+
+.gridbrett_black1 {
+	height:40px;
+	width:40px;
+	background-color: var(--clr-black);
+	grid-area: eins;
+}
+
+.gridbrett_white {
+	height:40px;
+	width:40px;
+	background-color: var(--clr-white);
+	grid-area: zwei;
+}
